@@ -65,7 +65,7 @@ const images = [
 ];
 
 const elementsContainer = document.querySelector('.gallery');
-console.log(elementsContainer);
+
 const createMarkup = images => {
   return images
     .map(
@@ -75,6 +75,7 @@ const createMarkup = images => {
             <img class="gallery-image"
             src="${preview}"
             alt="${description}" />
+            
             </a>
         </li>`
     )
@@ -82,3 +83,9 @@ const createMarkup = images => {
 };
 
 elementsContainer.innerHTML = createMarkup(images);
+
+const gallery = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
+    captionDelay: 250,
+    captionsPosition: 'bottom',
+});
