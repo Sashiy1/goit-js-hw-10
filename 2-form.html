@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>Form</title>
+    <script type="module" crossorigin src="/newProject/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/newProject/assets/modulepreload-polyfill-3cfb730f.js">
     <link rel="stylesheet" href="/newProject/assets/styles-25054b53.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </section>
+    
   </body>
 </html>
