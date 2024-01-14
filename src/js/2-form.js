@@ -10,7 +10,16 @@ function onFormSubmit(event) {
   event.preventDefault();
   localStorage.removeItem(STORAGE_KEY);
 
-  event.currentTarget.reset();
+  const inputMessage = textarea.value.trim();
+  const inputEmail = input.value.trim();
+
+  if (inputMessage !== '' && inputEmail !== '') {
+    const user = { email: inputEmail, message: inputMessage };
+    console.log(user);
+
+    localStorage.removeItem(STORAGE_KEY);
+    event.currentTarget.reset();
+  } 
 }
 
 form.addEventListener('input', event => {
@@ -28,7 +37,6 @@ function fillInForm() {
 
   if (savedData) {
     const user = JSON.parse(savedData);
-    console.log(user);
 
     input.value = user.email || '';
     textarea.value = user.message || '';
@@ -36,6 +44,3 @@ function fillInForm() {
 }
 
 fillInForm();
-
-
-
