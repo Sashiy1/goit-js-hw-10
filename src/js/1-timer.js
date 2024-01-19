@@ -28,7 +28,10 @@ const options = {
 
     if (selectedDate <= dateNow) {
       button.disabled = true;
-      window.alert('Please choose a date in the future');
+      // window.alert();
+      iziToast.warning({
+        message: 'Please choose a date in the future'
+    });
     } else {
       button.disabled = false;
       // const diff = selectedDate - dateNow;
@@ -98,3 +101,4 @@ function setClockface({ days, hours, minutes, seconds }) {
 function pad(value) {
   return String(value).padStart(2, '0');
 }
+
