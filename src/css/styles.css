@@ -78,7 +78,19 @@ ul {
 }
 
 
+.timer {
+  display: flex;
+  gap: 24px;
+}
 
-
+.field {
+  display: flex;
+  flex-direction: column;
+  
+}
+.value {
+  font-size: 48px;
+  
+}
 
 
