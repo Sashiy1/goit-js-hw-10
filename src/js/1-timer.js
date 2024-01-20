@@ -30,8 +30,18 @@ const options = {
       button.disabled = true;
       // window.alert();
       iziToast.warning({
-        message: 'Please choose a date in the future'
+        title: 'Error',
+        message: 'Illegal operation',
+        position: 'topRight',
+        backgroundColor: '#EF4040',
+        progressBarColor: '#FFBEBE',
+        titleColor: '#FFFFFF',
+        titleSize: '16px',
+        messageColor: '#FAFAFB',
+      
+        
     });
+    
     } else {
       button.disabled = false;
       // const diff = selectedDate - dateNow;
