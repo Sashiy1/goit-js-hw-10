@@ -95,3 +95,7 @@ ul {
 
 .iziToast-button-close {
   color: #00FF00 }
+
+  form {
+    width: 360px;
+  }
