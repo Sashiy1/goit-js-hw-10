@@ -170,7 +170,7 @@ legend {
   letter-spacing: 2px;
 }
 
-button {
+.submit {
   font-size: 16px;
   letter-spacing: 2px;
   height: 40px;
@@ -184,7 +184,7 @@ button {
   border: none;
 }
 
-button:hover {
+.submit:hover {
   background: #6c8cff;
 }
 
@@ -196,3 +196,5 @@ input[type="radio"] {
   border: 0.15em solid currentColor;
   vertical-align: -3px;
 }
+
+
