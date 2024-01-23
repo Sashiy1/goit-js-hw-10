@@ -60,6 +60,8 @@ button.addEventListener('click', startTimer);
 
 
 function startTimer () {
+  input.disabled = true;
+
     intervalId = setInterval(() => {
         const timeDiff = userSelectedDate.getTime() - Date.now()
         setClockface(convertMs(timeDiff));

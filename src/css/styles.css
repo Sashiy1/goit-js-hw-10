@@ -53,28 +53,45 @@ ul {
   list-style: none;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center; 
-  list-style: none;
+
+.home-btn {
+  margin-bottom: 40px;
 }
 
-.gallery-item {
-  position: relative;
+
+#datetime-picker {
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.gallery-image {
-  display: block;
-  width: 360px;
-  height: 200px;
-  transition: transform 0.3s;
+#datetime-picker[disabled] {
+  background-color: #FAFAFA;
+  color: #808080;
+  
 }
 
-.gallery-item:hover .gallery-image {
-  transform: scale(1.04); 
- 
+button[data-start] {
+  background-color: #4E75FF;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+
+
+button[data-start]:hover {
+  background-color: #6C8CFF;
+}
+
+button[data-start][disabled] {
+  background-color: #ccc;
+  color: #666;
+  
 }
 
 
@@ -86,16 +103,20 @@ ul {
 .field {
   display: flex;
   flex-direction: column;
-  
+  text-align: center;
 }
 .value {
-  font-size: 48px;
-  
+  color: #2E2F42;
+  font-size: 40px;
+
 }
 
-.iziToast-button-close {
-  color: #00FF00 }
 
-  form {
-    width: 360px;
-  }
+
+
+
+
+.label {
+  font-size: 16px;
+  color: #2E2F42;
+}
