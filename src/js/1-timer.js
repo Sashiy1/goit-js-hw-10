@@ -3,13 +3,15 @@ import flatpickr from 'flatpickr';
 // Додатковий імпорт стилів
 import 'flatpickr/dist/flatpickr.min.css';
 
+
+
 const timer = document.querySelector('.timer');
 const input = document.querySelector('#datetime-picker');
 const button = document.querySelector('button');
 const values = document.querySelectorAll('.value');
 
-
 button.disabled = true;
+
 
 
 let userSelectedDate = '';

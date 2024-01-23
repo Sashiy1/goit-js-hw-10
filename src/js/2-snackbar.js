@@ -30,13 +30,11 @@ function handleSubmit(event) {
   promise
     .then(delay => {
       iziToast.success({
-        title: 'Fulfilled promise',
         message: `✅ Fulfilled promise in ${delay}ms`,
       });
     })
     .catch(delay => {
       iziToast.error({
-        title: 'Rejected promise',
         message: `❌ Rejected promise in ${delay}ms`,
       });
     });
